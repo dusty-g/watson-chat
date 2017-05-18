@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C1CA90311ECE41B3006DC11D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CA90301ECE41B3006DC11D /* AppDelegate.swift */; };
+		C1CA90331ECE41B3006DC11D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CA90321ECE41B3006DC11D /* ViewController.swift */; };
+		C1CA90361ECE41B3006DC11D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1CA90341ECE41B3006DC11D /* Main.storyboard */; };
+		C1CA90391ECE41B3006DC11D /* watson.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1CA90371ECE41B3006DC11D /* watson.xcdatamodeld */; };
+		C1CA903B1ECE41B3006DC11D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1CA903A1ECE41B3006DC11D /* Assets.xcassets */; };
+		C1CA903E1ECE41B3006DC11D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1CA903C1ECE41B3006DC11D /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C1CA902D1ECE41B3006DC11D /* watson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watson.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1CA90301ECE41B3006DC11D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1CA90321ECE41B3006DC11D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C1CA90351ECE41B3006DC11D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1CA90381ECE41B3006DC11D /* watson.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = watson.xcdatamodel; sourceTree = "<group>"; };
+		C1CA903A1ECE41B3006DC11D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1CA903D1ECE41B3006DC11D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1CA903F1ECE41B3006DC11D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1CA902A1ECE41B3006DC11D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C1CA90241ECE41B3006DC11D = {
+			isa = PBXGroup;
+			children = (
+				C1CA902F1ECE41B3006DC11D /* watson */,
+				C1CA902E1ECE41B3006DC11D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C1CA902E1ECE41B3006DC11D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1CA902D1ECE41B3006DC11D /* watson.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1CA902F1ECE41B3006DC11D /* watson */ = {
+			isa = PBXGroup;
+			children = (
+				C1CA90301ECE41B3006DC11D /* AppDelegate.swift */,
+				C1CA90321ECE41B3006DC11D /* ViewController.swift */,
+				C1CA90341ECE41B3006DC11D /* Main.storyboard */,
+				C1CA903A1ECE41B3006DC11D /* Assets.xcassets */,
+				C1CA903C1ECE41B3006DC11D /* LaunchScreen.storyboard */,
+				C1CA903F1ECE41B3006DC11D /* Info.plist */,
+				C1CA90371ECE41B3006DC11D /* watson.xcdatamodeld */,
+			);
+			path = watson;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1CA902C1ECE41B3006DC11D /* watson */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1CA90421ECE41B3006DC11D /* Build configuration list for PBXNativeTarget "watson" */;
+			buildPhases = (
+				C1CA90291ECE41B3006DC11D /* Sources */,
+				C1CA902A1ECE41B3006DC11D /* Frameworks */,
+				C1CA902B1ECE41B3006DC11D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = watson;
+			productName = watson;
+			productReference = C1CA902D1ECE41B3006DC11D /* watson.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1CA90251ECE41B3006DC11D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Dustin Galindo";
+				TargetAttributes = {
+					C1CA902C1ECE41B3006DC11D = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = RVX28FPJ5M;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C1CA90281ECE41B3006DC11D /* Build configuration list for PBXProject "watson" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1CA90241ECE41B3006DC11D;
+			productRefGroup = C1CA902E1ECE41B3006DC11D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1CA902C1ECE41B3006DC11D /* watson */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1CA902B1ECE41B3006DC11D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1CA903E1ECE41B3006DC11D /* LaunchScreen.storyboard in Resources */,
+				C1CA903B1ECE41B3006DC11D /* Assets.xcassets in Resources */,
+				C1CA90361ECE41B3006DC11D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1CA90291ECE41B3006DC11D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1CA90391ECE41B3006DC11D /* watson.xcdatamodeld in Sources */,
+				C1CA90331ECE41B3006DC11D /* ViewController.swift in Sources */,
+				C1CA90311ECE41B3006DC11D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C1CA90341ECE41B3006DC11D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1CA90351ECE41B3006DC11D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1CA903C1ECE41B3006DC11D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1CA903D1ECE41B3006DC11D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1CA90401ECE41B3006DC11D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C1CA90411ECE41B3006DC11D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1CA90431ECE41B3006DC11D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RVX28FPJ5M;
+				INFOPLIST_FILE = watson/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dustingalindo.watson;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C1CA90441ECE41B3006DC11D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RVX28FPJ5M;
+				INFOPLIST_FILE = watson/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dustingalindo.watson;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1CA90281ECE41B3006DC11D /* Build configuration list for PBXProject "watson" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1CA90401ECE41B3006DC11D /* Debug */,
+				C1CA90411ECE41B3006DC11D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1CA90421ECE41B3006DC11D /* Build configuration list for PBXNativeTarget "watson" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1CA90431ECE41B3006DC11D /* Debug */,
+				C1CA90441ECE41B3006DC11D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C1CA90371ECE41B3006DC11D /* watson.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C1CA90381ECE41B3006DC11D /* watson.xcdatamodel */,
+			);
+			currentVersion = C1CA90381ECE41B3006DC11D /* watson.xcdatamodel */;
+			path = watson.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C1CA90251ECE41B3006DC11D /* Project object */;
+}
