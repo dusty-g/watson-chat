@@ -13,6 +13,9 @@
 		C1CA90391ECE41B3006DC11D /* watson.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1CA90371ECE41B3006DC11D /* watson.xcdatamodeld */; };
 		C1CA903B1ECE41B3006DC11D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1CA903A1ECE41B3006DC11D /* Assets.xcassets */; };
 		C1CA903E1ECE41B3006DC11D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1CA903C1ECE41B3006DC11D /* LaunchScreen.storyboard */; };
+		C1CA90471ECE4223006DC11D /* ConversationV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1CA90461ECE4223006DC11D /* ConversationV1.framework */; };
+		C1CA904A1ECE4390006DC11D /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1CA90491ECE4390006DC11D /* RestKit.framework */; };
+		C1CA904C1ECE4ABA006DC11D /* someDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CA904B1ECE4ABA006DC11D /* someDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		C1CA903A1ECE41B3006DC11D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1CA903D1ECE41B3006DC11D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1CA903F1ECE41B3006DC11D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1CA90461ECE4223006DC11D /* ConversationV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ConversationV1.framework; path = Carthage/Build/iOS/ConversationV1.framework; sourceTree = "<group>"; };
+		C1CA90491ECE4390006DC11D /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = Carthage/Build/iOS/RestKit.framework; sourceTree = "<group>"; };
+		C1CA904B1ECE4ABA006DC11D /* someDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = someDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1CA904A1ECE4390006DC11D /* RestKit.framework in Frameworks */,
+				C1CA90471ECE4223006DC11D /* ConversationV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +50,7 @@
 			children = (
 				C1CA902F1ECE41B3006DC11D /* watson */,
 				C1CA902E1ECE41B3006DC11D /* Products */,
+				C1CA90451ECE4222006DC11D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +67,7 @@
 			children = (
 				C1CA90301ECE41B3006DC11D /* AppDelegate.swift */,
 				C1CA90321ECE41B3006DC11D /* ViewController.swift */,
+				C1CA904B1ECE4ABA006DC11D /* someDelegate.swift */,
 				C1CA90341ECE41B3006DC11D /* Main.storyboard */,
 				C1CA903A1ECE41B3006DC11D /* Assets.xcassets */,
 				C1CA903C1ECE41B3006DC11D /* LaunchScreen.storyboard */,
@@ -65,6 +75,15 @@
 				C1CA90371ECE41B3006DC11D /* watson.xcdatamodeld */,
 			);
 			path = watson;
+			sourceTree = "<group>";
+		};
+		C1CA90451ECE4222006DC11D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1CA90491ECE4390006DC11D /* RestKit.framework */,
+				C1CA90461ECE4223006DC11D /* ConversationV1.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +96,7 @@
 				C1CA90291ECE41B3006DC11D /* Sources */,
 				C1CA902A1ECE41B3006DC11D /* Frameworks */,
 				C1CA902B1ECE41B3006DC11D /* Resources */,
+				C1CA90481ECE4232006DC11D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -99,8 +119,7 @@
 				TargetAttributes = {
 					C1CA902C1ECE41B3006DC11D = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = RVX28FPJ5M;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -135,11 +154,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C1CA90481ECE4232006DC11D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ConversationV1.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RestKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C1CA90291ECE41B3006DC11D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1CA904C1ECE4ABA006DC11D /* someDelegate.swift in Sources */,
 				C1CA90391ECE41B3006DC11D /* watson.xcdatamodeld in Sources */,
 				C1CA90331ECE41B3006DC11D /* ViewController.swift in Sources */,
 				C1CA90311ECE41B3006DC11D /* AppDelegate.swift in Sources */,
@@ -265,11 +303,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RVX28FPJ5M;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = watson/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dustingalindo.watson;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -278,11 +321,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RVX28FPJ5M;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = watson/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dustingalindo.watson;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
