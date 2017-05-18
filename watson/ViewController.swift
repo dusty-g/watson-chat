@@ -19,7 +19,10 @@ class ViewController: UIViewController {
     var context: Context? // save context to continue conversation
     var conversation: Conversation?
     @IBAction func submitButtonPressed(_ sender: UIButton) {
-        let text = "Turn on the radio."
+        guard let text = inputLabel.text else {
+            return
+        }
+        
         let failure = { (error: Error) in print(error) }
         let request = MessageRequest(text: text, context: context)
         conversation!.message(withWorkspace: workspaceID, request: request, failure: failure) {
@@ -30,6 +33,8 @@ class ViewController: UIViewController {
                 self.responseLabel.text = String(response.output.text[0])
             }
         }
+        inputLabel.text = ""
+        
     }
     
     @IBOutlet weak var inputLabel: UITextField!
