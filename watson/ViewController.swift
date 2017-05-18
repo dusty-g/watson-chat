@@ -11,13 +11,14 @@ import ConversationV1
 import RestKit
 
 class ViewController: UIViewController {
-    let username = "077db431-7c82-499a-a0aa-e6290c1b9872"
-    let password = "7rBdObraiydN"
+    let username = "3727e5c7-af42-4a2e-9b6b-469e995aad28"
+    let password = "8704S6GPogEq"
     let version = "2017-05-18" // use today's date for the most recent version
-    let workspaceID = "d8fefb98-6301-4769-ac80-891a855bc8f3"
+    let workspaceID = "48a704fe-2518-4b1e-82e4-4e2007b2f1cb"
     let failure = { (error: Error) in print(error) }
     var context: Context? // save context to continue conversation
     var conversation: Conversation?
+    
     @IBAction func submitButtonPressed(_ sender: UIButton) {
         guard let text = inputLabel.text else {
             return
