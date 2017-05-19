@@ -50,14 +50,32 @@
                                     <action selector="submitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ggs-7e-82h"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="bg3-9l-2nk">
+                                <rect key="frame" x="24" y="302" width="327" height="357"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyCell" id="5Ou-8D-1Oe">
+                                        <rect key="frame" x="0.0" y="55.5" width="327" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Ou-8D-1Oe" id="GeO-4s-CXO">
+                                            <rect key="frame" x="0.0" y="0.0" width="327" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eoi-iH-mXC" firstAttribute="top" secondItem="mI2-Ow-FQX" secondAttribute="bottom" constant="8" id="7ZN-th-Oa3"/>
                             <constraint firstItem="eoi-iH-mXC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cvf-jc-XEe"/>
                             <constraint firstItem="mI2-Ow-FQX" firstAttribute="top" secondItem="CGC-wF-qf6" secondAttribute="bottom" constant="8" id="FVU-Ne-zmp"/>
+                            <constraint firstItem="bg3-9l-2nk" firstAttribute="top" secondItem="eoi-iH-mXC" secondAttribute="bottom" constant="8" id="MJ0-sf-rA2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mI2-Ow-FQX" secondAttribute="trailing" id="Me2-Dq-LG3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bg3-9l-2nk" secondAttribute="trailing" constant="8" id="PqJ-PQ-BSs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bg3-9l-2nk" secondAttribute="bottom" constant="8" id="WCI-8L-9GQ"/>
                             <constraint firstItem="mI2-Ow-FQX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="c2b-yu-xkm"/>
+                            <constraint firstItem="bg3-9l-2nk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="cyv-Wl-kns"/>
                             <constraint firstItem="CGC-wF-qf6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="g36-U9-aY7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CGC-wF-qf6" secondAttribute="trailing" id="nqU-YK-5ho"/>
                             <constraint firstItem="CGC-wF-qf6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uWw-VR-wiX"/>
@@ -66,6 +84,7 @@
                     <connections>
                         <outlet property="inputLabel" destination="mI2-Ow-FQX" id="aqE-dy-zab"/>
                         <outlet property="responseLabel" destination="CGC-wF-qf6" id="kiD-bn-1w0"/>
+                        <outlet property="tableView" destination="bg3-9l-2nk" id="pef-aT-wFH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
