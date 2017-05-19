@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     var imageSource = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
     @IBOutlet weak var imageView: UIImageView!
     @IBAction func submitButtonPressed(_ sender: UIButton) {
+        self.imageView.isHidden = true
         guard let text = inputLabel.text else {
             return
         }
