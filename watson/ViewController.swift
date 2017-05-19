@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     let username = "077db431-7c82-499a-a0aa-e6290c1b9872"
     let password = "7rBdObraiydN"
     let version = "2017-05-18" // use today's date for the most recent version
-    let workspaceID = "d8fefb98-6301-4769-ac80-891a855bc8f3"
+    let workspaceID = "17b0951c-eb03-4806-b0eb-85c7d8e5cf7b"
     let failure = { (error: Error) in print(error) }
     var context: Context? // save context to continue conversation
     var conversation: Conversation?
