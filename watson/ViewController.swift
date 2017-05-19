@@ -12,7 +12,7 @@ import RestKit
 
 class ViewController: UIViewController {
     let username = "077db431-7c82-499a-a0aa-e6290c1b9872"
-    let password = "*******"
+    let password = "******"
     let version = "2017-05-18" // use today's date for the most recent version
     let workspaceID = "17b0951c-eb03-4806-b0eb-85c7d8e5cf7b"
     let failure = { (error: Error) in print(error) }
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
             
         }
         inputLabel.text = ""
-        
+        inputLabel.resignFirstResponder()
     }
     
     @IBOutlet weak var inputLabel: UITextField!
