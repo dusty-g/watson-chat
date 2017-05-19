@@ -12,7 +12,7 @@ import RestKit
 
 class ViewController: UIViewController {
     let username = "077db431-7c82-499a-a0aa-e6290c1b9872"
-    let password = "******"
+    let password = "xxx"
     let version = "2017-05-18" // use today's date for the most recent version
     let workspaceID = "17b0951c-eb03-4806-b0eb-85c7d8e5cf7b"
     let failure = { (error: Error) in print(error) }
@@ -22,6 +22,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBAction func submitButtonPressed(_ sender: UIButton) {
         self.imageView.isHidden = true
+        self.imageView.image = nil
+        self.responseLabel2.isHidden = true
         guard let text = inputLabel.text else {
             return
         }
@@ -33,8 +35,13 @@ class ViewController: UIViewController {
             
             self.context = response.context
             DispatchQueue.main.async {
-                self.responseLabel.text = String(response.output.text[0])
+                var responses = [self.responseLabel, self.responseLabel2]
                 
+//                self.responseLabel.text = String(response.output.text[0])
+                for i in 0..<response.output.text.count{
+                    responses[i]!.text = String(response.output.text[i])
+                    responses[i]!.isHidden = false
+                }
                 let pokemonID = response.output.json["pokemonID"]
                 if pokemonID != nil {
                     print(pokemonID!)
@@ -52,18 +59,22 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var inputLabel: UITextField!
     @IBOutlet weak var responseLabel: UILabel!
+    @IBOutlet weak var responseLabel2: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         responseLabel.isHidden = true
+        responseLabel2.isHidden = true
         conversation = Conversation(username: username, password: password, version: version)
         
 
         conversation!.message(withWorkspace: workspaceID, failure: failure) { response in
             DispatchQueue.main.async {
                 self.responseLabel.text = String(describing: response.output.text[0])
+                
                 self.responseLabel.isHidden = false
+                
             }
-            self.responseLabel.text = String(describing: response.output.text[0])
+            
             
             self.context = response.context
             
