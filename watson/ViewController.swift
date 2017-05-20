@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     var conversation: Conversation?
     var convoWithWatson = [String]()
     
+    //@IBOutlet weak var watsonConvoLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
     // on submit button pressed
@@ -64,6 +65,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        self.tableView.estimatedRowHeight = 80
+        self.tableView.rowHeight = UITableViewAutomaticDimension
         
         conversation = Conversation(username: username, password: password, version: version)
         conversation!.message(withWorkspace: workspaceID, failure: failure) { response in
@@ -92,6 +95,7 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
+        
         cell.textLabel?.text = convoWithWatson[indexPath.row]
         print(indexPath.row)
         return cell
